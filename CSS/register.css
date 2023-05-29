@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+#register-screen{
+    width: 100%;
+    height: 149.92503748125938vh;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-top{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240,242,245);
+}
+
+.top-box{
+    width: 30%;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.box-top{
+    width: 100%;
+    height: 13%;
+    /* border: 1px solid red; */
+}
+
+.box-top img{
+    width: 100%;
+    scale: 0.7;
+}
+
+.box-bot{
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid grey; */
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.form-top{
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-mid{
+    width: 100%;
+    height: 70%;
+    /* border: 1px solid red; */
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    /* height: 50vh; */
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.main-input{
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-top: 4%;
+    padding: 10px;
+    font-size: 0.95em;
+}
+
+.dob-input{
+    width: 28.5%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-top: 4%;
+    padding: 10px;
+    font-size: 0.95em;
+}
+
+.policy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.policy p{
+    /* border: 1px solid red; */
+    width: 90%;
+    font-size: 0.7em;
+    padding-top: 10px;
+}
+
+.policy span{
+    color: rgb(56,88,152);
+}
+
+.form-bot{
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-bot button{
+    margin-bottom: 7%;
+    border: none;
+    outline: none;
+    width: 35%;
+    height: 30%;
+    background-color: rgb(0,164,0);
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.form-bot p{
+    color: rgb(24,119,243);
+    cursor: pointer;
+}
+
+
+.inner-bot{
+    width: 100%;
+    height: 20%;
+    /* border: 2px solid green; */
+}
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Facebook Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="CSS/register.css">
+        <script src="javascript/userFunction.js"></script>
+    </head>
+
+    <body>
+        <div id="register-screen">
+            <div class="inner-top">
+                <div class="top-box">
+                    <div class="box-top">
+                        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="" />
+                    </div>
+                    <div class="box-bot">
+                        <div class="form-top">
+                            <h2>Create a new Account</h2>
+                            <p>It's quick and easy.</p>
+                        </div>
+                        <div class="form-mid">
+                            <div class="form-container">
+                                <form onsubmit="facebook_register(event)">
+                                    <input id="facebook_username" class="main-input" type="text" placeholder="Username" />
+                                    <input id="facebook_email" class="main-input" type="email" placeholder="Email address" />
+                                    <input id="facebook_password" class="main-input" type="password" placeholder="Password" />
+                                    <input id="facebook_confirmPassword" class="main-input" type="password" placeholder="Confirm password" />
+                                    <div class="form-container">
+                                        <input id="facebook_day" class="dob-input" type="text" placeholder="DD" />
+                                        <input id="facebook_month" class="dob-input" type="text" placeholder="MM" />
+                                        <input id="facebook_year" class="dob-input" type="text" placeholder="YYYY" />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="policy">
+                                <p>People who use our service may have uploaded your contact information to Facebook. <span>Learn more.</span></p>
+                                <p>By Clicking Sign Up, you agree to our <span>Terms, Privacy Policy and Cookies Policy.</span> You may receive SMS notifications from us and can opt out at any time.</p>
+                            </div>
+                        </div>
+                        <div class="form-bot">
+                            <button onclick="facebook_register(event)">Sign Up</button>
+                            <p>Already have an account?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-bot"></div>
+        </div>
+    </body>
+
+</html>
