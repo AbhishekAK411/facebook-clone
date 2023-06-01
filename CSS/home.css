@@ -44,7 +44,7 @@
 }
 
 .nav-search{
-    width: 70%;
+    width: 75%;
     height: 100%;
     /* border: 1px solid red; */
     display: flex;
@@ -131,11 +131,217 @@
     object-fit: cover;
 }
 
+.navDropdown{
+    width: 26%;
+    height: 400px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display: none;
+    
+}
+
+.innerDropdown{
+    width: 90%;
+    height: 95%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 3.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.navProfile{
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid red; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    display: flex;
+}
+
+.navProfileImage{
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navProImage-inner{
+    width: 60%;
+    height: 70%;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+}
+
+.navProImage-inner img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.navProfileName{
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.navSett{
+    width: 100%;
+    height: 60%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    row-gap: 5px;
+}
+
+.navSettings{
+    width: 100%;
+    height: 25%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.navSettings:hover{
+    background-color: rgb(237,239,242);
+}
+
+.navSettings p{
+    padding-left: 20px;
+}
+
+.postDropdown{
+    width: 40%;
+    height: 450px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 2;
+    display: none;
+    
+}
+
+.createPostHead{
+    width: 100%;
+    height: 15%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.postHeadLeft{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.postHeadMid{
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postHeadRight{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainSubmitPost{
+    width: 100%;
+    height: 65%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-submitPost{
+    width: 90%;
+    height: 90%;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+}
+
+.inner-submitPost input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin-top: 5%;
+    border: 1px solid lightgrey;
+    border-radius: 40px;
+    padding: 10px;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.postButton{
+    width: 100%;
+    height: 15%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postButton button{
+    width: 90%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(9,124,235);
+    color: white;
+    font-size: 1.4em;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+}
+
+.grey-screen{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(243,243,244);
+    opacity: 0.8;
+    z-index: 1;
+    display: none;
+}
+
 .main-home{
     width: 100%;
     height: 100%;
     /* border: 5px solid yellow; */
     margin-top: 5%;
+    position: relative;
     display: flex;
     justify-content: space-between;
     background-color: rgb(240,242,245);
@@ -228,7 +434,7 @@
 
 .mind-post{
     width: 100%;
-    height: 25%;
+    height: 20%;
     margin-top: 5%;
     /* border: 1px solid red; */
     border-radius: 10px;
@@ -271,22 +477,29 @@
     height: 50%;
     /* border: 1px solid red; */
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
 
 .mind-type{
     width: 30%;
-    height: 100%;
+    height: 80%;
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
+}
+
+.mind-type:hover{
+    background-color: rgb(240,242,245);
 }
 
 .mind-type p{
     padding-left: 5px;
     font-weight: bold;
     color: rgb(101,103,107);
+    cursor: pointer;
 }
 
 .posts{
