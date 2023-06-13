@@ -87,3 +87,7 @@ function logout(){
     localStorage.removeItem("facebook_current_user");
     window.location.reload();
 }
+
+function redirectToSettings(){
+    window.location.href = `./settings.html`;
+}

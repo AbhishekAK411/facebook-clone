@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit Profile</title>
+        <link rel="stylesheet" type="text/css" href="CSS/home.css">
+        <link rel="stylesheet" type="text/css" href="CSS/settings.css">
+        <script src="javascript/settingFunction.js"></script>
+    </head>
+
+    <body>
+        <div id="settings-screen">
+            <div class="navbar">
+                <div class="nav-first">
+                    <div class="nav-logo">
+                        <img src="data:image/png;base64,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"
+                            alt="" />
+                    </div>
+                    <div class="nav-search">
+                        <input type="text" placeholder="Search Facebook" />
+                    </div>
+                </div>
+                <div class="nav-icons">
+                    <div class="inner-icons">
+                        <div class="fb-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="fb-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M208,40H48A24,24,0,0,0,24,64V176a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V64A24,24,0,0,0,208,40Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V64a8,8,0,0,1,8-8H208a8,8,0,0,1,8,8Zm-48,48a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,224Zm-3.56-110.66-48-32A8,8,0,0,0,104,88v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,137.05V103l25.58,17Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="fb-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M232,96a7.89,7.89,0,0,0-.3-2.2L217.35,43.6A16.07,16.07,0,0,0,202,32H54A16.07,16.07,0,0,0,38.65,43.6L24.31,93.8A7.89,7.89,0,0,0,24,96v16a40,40,0,0,0,16,32v64a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V144a40,40,0,0,0,16-32ZM54,48H202l11.42,40H42.61Zm50,56h48v8a24,24,0,0,1-48,0Zm-16,0v8a24,24,0,0,1-48,0v-8ZM200,208H56V151.2a40.57,40.57,0,0,0,8,.8,40,40,0,0,0,32-16,40,40,0,0,0,64,0,40,40,0,0,0,32,16,40.57,40.57,0,0,0,8-.8Zm-8-72a24,24,0,0,1-24-24v-8h48v8A24,24,0,0,1,192,136Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="fb-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="fb-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M224,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48Zm0,16V88H32V64Zm0,128H32V104H224v88Zm-16-24a8,8,0,0,1-8,8H168a8,8,0,0,1,0-16h32A8,8,0,0,1,208,168Zm-64,0a8,8,0,0,1-8,8H120a8,8,0,0,1,0-16h16A8,8,0,0,1,144,168Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-social">
+                    <div class="social-right">
+                        <div class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M76,60A16,16,0,1,1,60,44,16,16,0,0,1,76,60Zm52-16a16,16,0,1,0,16,16A16,16,0,0,0,128,44Zm68,32a16,16,0,1,0-16-16A16,16,0,0,0,196,76ZM60,112a16,16,0,1,0,16,16A16,16,0,0,0,60,112Zm68,0a16,16,0,1,0,16,16A16,16,0,0,0,128,112Zm68,0a16,16,0,1,0,16,16A16,16,0,0,0,196,112ZM60,180a16,16,0,1,0,16,16A16,16,0,0,0,60,180Zm68,0a16,16,0,1,0,16,16A16,16,0,0,0,128,180Zm68,0a16,16,0,1,0,16,16A16,16,0,0,0,196,180Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm53.66,93.66-32,32a8,8,0,0,1-11.32,0L112,123.31,85.66,149.66a8,8,0,0,1-11.32-11.32l32-32a8,8,0,0,1,11.32,0L144,132.69l26.34-26.35a8,8,0,0,1,11.32,11.32Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M224,71.1a8,8,0,0,1-10.78-3.42,94.13,94.13,0,0,0-33.46-36.91,8,8,0,1,1,8.54-13.54,111.46,111.46,0,0,1,39.12,43.09A8,8,0,0,1,224,71.1ZM35.71,72a8,8,0,0,0,7.1-4.32A94.13,94.13,0,0,1,76.27,30.77a8,8,0,1,0-8.54-13.54A111.46,111.46,0,0,0,28.61,60.32,8,8,0,0,0,35.71,72Zm186.1,103.94A16,16,0,0,1,208,200H167.2a40,40,0,0,1-78.4,0H48a16,16,0,0,1-13.79-24.06C43.22,160.39,48,138.28,48,112a80,80,0,0,1,160,0C208,138.27,212.78,160.38,221.81,175.94ZM150.62,200H105.38a24,24,0,0,0,45.24,0Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div onclick="settingDropdown()" class="social-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/44/44948.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-settings">
+                <div id="nav_box" class="navDropdown">
+                    <div class="innerDropdown">
+                        <div class="navProfile">
+                            <div class="navProfileImage">
+                                <div class="navProImage-inner">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/44/44948.png" alt="" />
+                                </div>
+                            </div>
+                            <div id="replace-nav-profile-name" class="navProfileName">
+                                <p>username</p>
+                            </div>
+                        </div>
+
+                        <div class="navSett">
+                            <div onclick="redirectToSettings()" class="navSettings">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"></path></svg>
+                                <p>Settings & privacy</p>
+                            </div>
+                            <div class="navSettings">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M208,40H48A24,24,0,0,0,24,64V176a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V64A24,24,0,0,0,208,40Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V64a8,8,0,0,1,8-8H208a8,8,0,0,1,8,8Zm-48,48a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,224Z"></path></svg>
+                                <p>Display & appearance</p>
+                            </div>
+                            <div onclick="logout()" class="navSettings">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M112,216a8,8,0,0,1-8,8H48a16,16,0,0,1-16-16V48A16,16,0,0,1,48,32h56a8,8,0,0,1,0,16H48V208h56A8,8,0,0,1,112,216Zm109.66-93.66-40-40a8,8,0,0,0-11.32,11.32L196.69,120H104a8,8,0,0,0,0,16h92.69l-26.35,26.34a8,8,0,0,0,11.32,11.32l40-40A8,8,0,0,0,221.66,122.34Z"></path></svg>
+                                <p>Logout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+
+</html>
